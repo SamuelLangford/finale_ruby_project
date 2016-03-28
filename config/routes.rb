@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     end
   end
   
+  
 #                   Prefix Verb   URI Pattern                       Controller#Action
 #            neighborhoods GET    /neighborhoods(.:format)          neighborhoods#index
 #                          POST   /neighborhoods(.:format)          neighborhoods#create
