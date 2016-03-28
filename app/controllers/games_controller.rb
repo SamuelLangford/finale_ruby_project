@@ -1,6 +1,7 @@
 class GamesController < ApplicationController
   before_action :set_game, only: [:show, :edit, :update, :destroy]
 
+  skip_before_action :verify_authenticity_token
   # GET /games
   # GET /games.json
   def index
@@ -60,6 +61,16 @@ class GamesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+  def add_game
+    game = Game.find(params[:id])
+    user = User.find(current_user.id)
+    user.games << game
+    redirect_to root_path
+  end
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

@@ -1,5 +1,6 @@
+<h1>This is game show page</h1>
 <p id="notice"><%= notice %></p>
-
+<div class='board-container'><img src="<%= @game.img_url%>"></div>
 <p>
   <strong>Name:</strong>
   <%= @game.name %>
@@ -7,3 +8,20 @@
 
 <%= link_to 'Edit', edit_game_path(@game) %> |
 <%= link_to 'Back', games_path %>
+
+
+
+<form action="/games/<%= @game.id %>/add_game" method="post">
+    <input type="hidden" name="_method" value="put">
+    <button value='<%= current_user %>'>Add to collection</button>
+</form>
+     
+        
+
+<div> <h5>Users that own <%= @game.name %></h5>
+<% @game.users.each do |i| %>		
+	<a href="/users/<%= i.id %>/"><%= i.email %>'s' Profile</a>
+<% end %>	
+</div>	 
+
+<article><%= @game.rules %></article>
