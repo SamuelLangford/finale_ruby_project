@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   devise_for :users
   root 'games#index'
 	get 'users/:id' => 'users#show'
-	
+	post '/games/search' => 'games#search'
+
  resources :games do
     member do
       put 'add_game'

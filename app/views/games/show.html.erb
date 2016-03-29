@@ -10,12 +10,13 @@
 <%= link_to 'Back', games_path %>
 
 
-
+<% if current_user %>
 <form action="/games/<%= @game.id %>/add_game" method="post">
     <input type="hidden" name="_method" value="put">
     <button value='<%= current_user %>'>Add to collection</button>
 </form>
-     
+ <% end %>
+
         
 
 <div> <h5>Users that own <%= @game.name %></h5>
@@ -23,5 +24,5 @@
 	<a href="/users/<%= i.id %>/"><%= i.email %>'s' Profile</a>
 <% end %>	
 </div>	 
-
+	
 <article><%= @game.rules %></article>
