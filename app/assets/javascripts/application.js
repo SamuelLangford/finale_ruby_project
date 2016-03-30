@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var x = function (arr) {
+	console.log(arr.split(''))
+}

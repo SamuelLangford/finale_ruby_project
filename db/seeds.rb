@@ -1,89 +1,183 @@
 
 User.delete_all
 Game.delete_all
-Game.create([{
+Game.create([
+{
 name: 'Catan', 
 img_url: 'http://images.akamai.steamusercontent.com/ugc/41972545083312882/0A1E7DDCE83C6CC2B2C42ADFA918C02E97E6C645/', 
-rules: 'The players in the game represent settlers establishing colonies on the island of Catan. Players build settlements, cities, and roads to connect them as they settle the island. The game board representing the island is composed of hexagonal tiles (hexes) of different land types which are laid out randomly at the beginning of each game;[5] new editions of the game also depict a fixed layout in their manual, which has been proven to be fairly even-handed by computer simulations, and recommend this to be used by beginners.
-Players build by spending resources (brick, lumber, wool, grain, and ore), represented by resource cards; each land type, with the exception of the unproductive desert, produces a specific resource. On each player\'s turn, two six-sided dice are rolled to determine which hexes produce resources. Any players with settlements or cities adjacent to hexes marked with the number rolled receive resource cards of the appropriate type. There is also a robber token, initially on the desert; if a player rolls 7, the robber must be moved to another hex, which will no longer produce resources until the robber is moved again; the player may also steal a resource card from another player. In addition, when a 7 is rolled, all players with more than 7 resource cards must discard half of their cards, rounded down. However, the player gets to choose which half of their resource cards they must discard. For example, a player with 11 resource cards must discard any five cards when a 7 is rolled.
-Players can trade resource cards among each other; players may also trade off-island (in effect, with the non-player bank) at a ratio of four of one resource for one of any other. By building settlements in certain spots on the edge of the board (ports), players may trade with the bank at three-to-one (3 of any single resource type) or two-to-one (two of a specific resource) ratios, determined by the port\'s location.
-The goal of the game is to reach 10 victory points. Players score one point for each settlement they own and two for each city. Various other achievements, such as establishing the longest road and the largest army (by playing the most knight cards), grant a player additional victory points.
-Resource cards can also be spent to buy a development card. Three types of development cards include cards worth one victory point; knight cards (or soldier cards), which allow the player to move the robber as if they had rolled a 7 (but without the remove-half rule); and a third set of cards which allow the player one of three abilities when played.
-'}, 
+rules: 'http://www.catan.com/en/download/?SoC_rv_Rules_091907.pdf'}, 
 { 
 name: 'Go', 
 img_url: 'http://0.s3.envato.com/files/78833222/Image%20Preview.jpg', 
-rules: 'Go is an adversarial game with the objective of having surrounded a larger total area of the board with one\'s stones than the opponent. As the game progresses, the players place stones which map out formations and potential territories. Areas are contested in battles between opposing stones, which are often complex and may result in the expansion, reduction, or wholesale capture and loss of the contested area.
-The four liberties (adjacent empty points) of a single black stone (A), as White reduces those liberties by one (B, C, and D). When Black has only one liberty left (D), that stone is "in atari".[13] White may capture that stone (remove from board) with a play on its last liberty (at D-1).
-A basic principle of Go is that stones must have at least one "liberty" to remain on the board. A "liberty" is an open "point" (intersection) next to a stone. An enclosed liberty (or liberties) is called an "eye", and a group of stones with at least two separate eyes is said to be unconditionally "alive".[14] Such groups cannot be captured, even if surrounded.[15] "Dead" stones are stones that are surrounded and in groups with poor shape (one or no eyes), and thus cannot resist eventual capture.[16]
-The general strategy of Go is to expand one\'s territory where possible, attack the opponent\'s weak groups (groups that can possibly be killed), and always stay mindful of the "life status" of one\'s own groups.[17][18] The liberties of groups are countable. Situations where two opposing groups must capture the other to live are called capturing races semeai.[19] In a capturing race, the group with more liberties (and/or better "shape") will ultimately be able to capture the opponent\'s stones.[19][20] Capturing races and questions of life and death are examples of what makes Go challenging.
-The game ends when both players pass, and players pass when there are no more profitable moves to be made.[21] The game is then scored: The player with the greater number of controlled (surrounded) points, factoring in the number of captured stones and komi, wins the game.[22] Games may also be won by resignation, for example if a player has lost a large group of stones.
-'},
+rules: "http://www.as8.it/stuff/how_to_play_Go.pdf" 
+},
 {
 name: 'Monopoly',
 img_url: 'http://images.freeimages.com/images/premium/previews/1860/18602707-monopoly-board-game-box.jpg', 
-rules: 'Players take turns in order, with the initial player determined by chance before the game. A typical turn begins with the rolling of the dice and advancing their piece clockwise around the board the corresponding number of squares. If a player rolls doubles, they roll again after completing their turn. If a player rolls three consecutive sets of doubles on one turn, the player has been "caught speeding", and the player is immediately sent to jail instead of moving the amount shown on the dice for the third roll, ending the player\'s turn.
-A player who lands on or passes the Go space collects $200 from the bank. However, when the optional Speed Die is used, a player who rolls a triple and chooses to move to "Go to Jail" does not collect if the move would normally take them past Go.
-Players who land on either Income Tax or Luxury Tax pay the indicated amount to the bank. In older editions of the game, two options were given for Income Tax: either pay a flat fee of $200 or 10% of the player\'s total worth (including the current values of all the properties and buildings owned). Players must choose which option before calculating their total worth, and cannot change their mind if it turns out that the $200 was actually less; in 2008, the 10% option was removed. Luxury Tax was originally $75; in 2008, it was increased to $100. No reward or penalty is given for landing on Free Parking',
+rules: "http://www.hasbro.com/common/instruct/Monopoly_Vintage.pdf" 
 },
 {
 name: 'Smash Up', 
 img_url: 'http://www.alderac.com/smashup/files/2014/04/SU5_GeekBoxTop.jpg', 
-rules:'The "shufflebuilding" game Smash Up starts with a simple premise: Take the twenty-card decks of two factions, shuffle them into a forty-card deck, then compete to smash more Bases than your opponents! Each faction brings a different game mechanism into play – pirates move cards, zombies bring cards back from the discard pile, dinosaurs have huge power – and every combination of factions brings a different play experience.
-During play, Base cards (each with their own difficulties and abilities) are in play. You attempt to have the most power on the Base from your minions when the Base is smashed. Sounds easy? How easy is it when an opponent\'s Alien-Ninja decides to Beam Up your minions to other Bases - flat out Assassinate them? What about when the Pirate-Dinosaur player Full Sails in and releases King Rex to stomp your minions into the ground, or when the Wizard-Zombies use their Mystic Power to create an Outbreak, suddenly flooding minions onto the Base from the discard pile? Or what if you faced a Zombie-Dinosaur player instead and he created an Outbreak of massive beasts all at once?!?
-When a Base is smashed, each player in first, second and third place scores points. Fourth place? Sorry, bro – try harder next time.
-With eight different factions, Smash Up includes dozens of combinations to try. Pirate-Aliens play different than Ninja-Aliens, for instance. Which will you use to smash up your opponents?'
+rules: "https://www.alderac.com/smashup/files/2012/06/AEG-SU-Rulebook.pdf"
 },
 { 
 name:"Risk", 
 img_url: "http://www.drinkinggames.co.uk/images/games/risk.jpg", 
-rules:"Risk is a turn-based game for two to six players.[1] The standard version is played on a board depicting a political map of the Earth, divided into forty-two territories, which are grouped into six continents. The object of the game is to occupy every territory on the board and in doing so, eliminate the other players.[3] Players control armies with which they attempt to capture territories from other players, with results determined by dice rolls.Each player first counts out a number of infantry for initial deployment. The number of starting armies depends on the number of players. If two are playing, then each player counts out 40 infantry, plus 40 more from a different color set. This third set is neutral and only defends if attacked (the player not attacking rolls for the neutral armies). If three are playing, each player counts out 35 infantry; four players, 30 infantry; five players, 25 infantry; six players, 20 infantry. Players then take turns claiming territories by placing an infantry on an unoccupied territory until all the territories are occupied. Players then take turns placing their remaining armies on their territories. Having done this, the actual game begins with another roll of a dice, which is used to determine the playing order." 
+rules: "http://www.hasbro.com/common/instruct/risk.pdf"
 },
 {
 name:"Ticket To Ride", 
 img_url: "https://cf.geekdo-images.com/images/pic38674.jpg", 
-rules:"Each turn, the player has to choose from three options:
-draw two railway car cards in various colours from the draw piles (with the restriction that drawing a wild Locomotive card face up forfeits drawing another card), or
-draw three additional destination ticket cards and keep at least one (replacing undesired tickets at the bottom of the stack), or
-play their collected railway car cards from their hand to claim routes on the board which is a map of the United States and southern Canada and place the corresponding number of train pieces from their store on the claimed route, thereby earning points.
-Note: a player may only execute one of the options above per turn.The routes are of varying lengths (requiring varying numbers of matching coloured cards), and each discrete route marked on the board can be claimed by only a single player. Some cities are connected by two parallel routes that can each be claimed by a different player (unless the game is played by 3 or fewer players, in which case only one of the routes can be claimed). The same player may not claim both parallel routes between two adjacent cities. Longer routes are worth progressively more points than shorter routes, e.g., a route of length four is worth more than two routes of length two.
-On his or her turn, a player can claim any route anywhere on the board that has not already been claimed, regardless of whether the route helps to complete his or her destination tickets. The routes score points by themselves, as mentioned above, but routes not connected to a player's destination do not help him or her in reaching the destination or completing his or her destination ticket.
-The game ends when one player has exhausted or nearly exhausted his or her supply of coloured train pieces. When this occurs, every player then plays one additional turn, after which they each reveal their previously hidden destination tickets. Additional points are awarded for having successfully connected the destinations on the cards, whereas points are subtracted for any incomplete tickets. A ten-point bonus is awarded to the player who has the longest continuously connected set of routes." 
+rules:"http://cdn1.daysofwonder.com/tickettoride/en/img/tt_rules_2013_en.pdf"
 },
 {	
 name:"Clue", 
 img_url: "http://whodoesthisstuff.com/wp-content/uploads/2015/03/clue-1986-game.jpg", 
-rules:"Cluedo (/ˈkluːdoʊ/) — known as Clue in North America — is a murder mystery game for three to six players, devised by Anthony E. Pratt from Birmingham, England, and currently published by the American game and toy company Hasbro. The object of the game is to determine who murdered the game's victim (\"Dr. Black\" in the UK version and \"Mr. Boddy\" in North American versions), where the crime took place, and which weapon was used. Each player assumes the role of one of the six suspects, and attempts to deduce the correct answer by strategically moving around a game board representing the rooms of a mansion and collecting clues about the circumstances of the murder from the other players" 
+rules: "http://www.hasbro.com/common/instruct/Clue_(2002).pdf"
 },
 { 
 name: 'Chess', 
 img_url: 'http://www.voofoostudios.com/wp-content/uploads/2014/05/Williams_PS_011.jpg', 
-rules: 'Chess is a two-player board game played on a chessboard, a checkered gameboard with 64 squares arranged in an eight-by-eight grid. Chess is played by millions of people worldwide, both amateurs and professionals.
-Each player begins the game with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. Each of the six piece types moves differently. The most powerful piece is the queen and the least powerful piece is the pawn. The objective is to \'checkmate\' the opponent\'s king by placing it under an inescapable threat of capture. To this end, a player\'s pieces are used to attack and capture the opponent\'s pieces, while supporting their own. In addition to checkmate, the game can be won by voluntary resignation by the opponent, which typically occurs when too much material is lost, or if checkmate appears unavoidable. A game may also result in a draw in several ways.' 
+rules: "http://www-math.bgsu.edu/~zirbel/chess/BasicChessRules.pdf"
 },
 {
 name: "Scrabble",
 img_url: "http://www.thatericalper.com/wp-content/uploads/2013/01/65273224_scrabble_topimage.jpg",
-rules:"Scrabble is a word game in which two to four players score points by placing tiles, each bearing a single letter, onto a gameboard which is divided into a 15×15 grid of squares. The tiles must form words which, in crossword fashion, flow left to right in rows or downwards in columns. The words must be defined in a standard dictionary. Specified reference works (e.g., the Official Tournament and Club Word List, the Official Scrabble Players Dictionary) provide a list of officially permissible words." 
-}
+rules: "http://www.hasbro.com/common/instruct/Scrabble_(2003).pdf"
+},
+{
+name:"Cards Against Humanity" , 
+img_url:"http://www.adweek.com/files/imagecache/node-blog/aah-1.jpg" , 
+rules:"https://s3.amazonaws.com/cah/CAH_Rules.pdf" 
+},
+{
+name:"Munkin",
+img_url:"http://www.gamehead.com/sites/default/files/styles/gh_article_banner_teaser/public/images/article/thumb_files/1679/munchkin-4q3lqdr.png?itok=efx3sA-S",
+rules:"http://www.worldofmunchkin.com/rules/munchkin_rules.pdf"},
+ {
+name: "Magic: The Gathering" ,
+img_url:"http://img14.deviantart.net/0eb2/i/2013/247/f/0/magic_the_gathering_mana_wallpaper_by_amphetamine_ashley-d6l0g9d.png",
+rules:"https://www.wizards.com/magic/rules/mtg9edrulebook_en.pdf"
+},
+{
+name:"Bang" ,
+img_url: "http://gamerate.net/img/games/864/box.jpg",
+rules: "http://www.dvgiochi.net/bang/bang_rules.pdf"
+},
+{
+name: "Pandemic Legacy",
+img_url:"http://dailyworkerplacement.com/wp-content/uploads/2015/12/pleg1a-1541x1140.jpg" ,
+rules:"http://www.bgames.com.ua/rules/pandemic_legacy.pdf"
+},
+{
+name:"Carcassonne" ,
+img_url:"http://assets.dacw.co/itemimages/carcassonnebigbox1a.jpg" ,
+rules:"http://www.zmangames.com/uploads/4/7/1/7/47170931/carcassonne_new_edition.pdf"
+},
 ]);
+# {name: ,img_url: ,rules:},
 
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-
-
+# Neighborhood.create([   
+# {name:"Upper Manhattan"},
+# {name:"Marble Hill"},
+# {name:"Inwood"},
+# {name:"Washington Heights"},
+# {name:"Hudson Heights"},
+# {name:"West Harlem"},
+# {name:"Hamilton Heights"},
+# {name:"Manhattanville"},
+# {name:"ViVa, Viaduct Valley"},
+# {name:"Morningside Heights"},
+# {name:"Central Harlem"},
+# {name:"Harlem"},
+# {name:"Sugar Hill"},
+# {name:"East Harlem"},
+# {name:"Upper East Side"},
+# {name:"Carnegie Hill"},
+# {name:"Yorkville"},
+# {name:"Upper West Side"},
+# {name:"Manhattan Valley"},
+# {name:"Lincoln Square"},
+# {name:"Midtown Manhattan"},
+# {name:"Columbus Circle"},
+# {name:"Sutton Place"},
+# {name:"Rockefeller Center"},
+# {name:"Diamond District"},
+# {name:"Theater District"},
+# {name:"Turtle Bay"},
+# {name:"Midtown East"},
+# {name:"Midtown"},
+# {name:"Tudor City"},
+# {name:"Little Brazil"},
+# {name:"Times Square"},
+# {name:"Hudson Yards"},
+# {name:"Midtown West"},
+# {name:"Hell's Kitchen"},
+# {name:"Garment District"},
+# {name:"Herald Square"},
+# {name:"Koreatown"},
+# {name:"Murray Hill"},
+# {name:"Tenderloin"},
+# {name:"Madison Square"},
+# {name:"Flower District"},
+# {name:"Brookdale"},
+# {name:"Kips Bay"},
+# {name:"Rose Hill"},
+# {name:"NoMad"},
+# {name:"Chelsea"},
+# {name:"Flatiron District"},
+# {name:"Gramercy Park"},
+# {name:"Stuyvesant Square"},
+# {name:"Union Square"},
+# {name:"Stuyvesant Town"},
+# {name:"Meatpacking District"},
+# {name:"Waterside Plaza"},
+# {name:"Little Germany"},
+# {name:"Alphabet City"},
+# {name:"East Village"},
+# {name:"Greenwich Village"},
+# {name:"NoHo   Houston"},
+# {name:"West Village"},
+# {name:"Lower East Side"},
+# {name:"SoHo"},{name:"Nolita"},
+# {name:"Little Italy"},
+# {name:"Chinatown Chambers"},
+# {name:"Financial District"},
+# {name:"TriBeCa"},{name:"Brooklyn Heights"},
+# {name:"Brooklyn Navy Yard"},
+# {name:"Admiral's Row"},
+# {name:"Cadman Plaza"},
+# {name:"Clinton Hill"},
+# {name:"Downtown Brooklyn"},
+# {name:"Bridge Plaza"},
+# {name:"DUMBO"},
+# {name:"Fort Greene"},
+# {name:"Fulton Ferry"},
+# {name:"Pacific Park"},
+# {name:"Prospect Heights"},
+# {name:"Vinegar Hill"},
+# {name:"South Brooklyn"},
+# {name:"Boerum Hill"},
+# {name:"Carroll Gardens"},
+# {name:"Columbia Street Waterfront District"},
+# {name:"Cobble Hill"},
+# {name:"Gowanus"},
+# {name:"Park Slope"},
+# {name:"South Park Slope"},
+# {name:"Greenwood Heights"},
+# {name:"Red Hook"},
+# {name:"Bedford–Stuyvesant"},
+# {name:"Bedford"},
+# {name:"Ocean Hill"},
+# {name:"Stuyvesant Heights"},
+# {name:"Wyckoff Heights"},
+# {name:"Little Poland"},
+# {name:"Crown Heights"},
+# {name:"Weeksville"},
+# {name:"Ditmas Park"},
+# {name:"Flatbush"},{name:"Beverley Squares"},{name:"East Flatbush"},{name:"Farragut"},{name:"Fiske Terrace"},{name:"Pigtown"},{name:"Prospect Park"},{name:"Kensington"},{name:"Ocean Parkway"},{name:"Prospect Lefferts Gardens"},{name:"Prospect Park South"},{name:"West Midwood"},{name:"Windsor Terrace"},{name:"Wingate"},{name:"Midwood"},{name:"Bath Beach"},{name:"Bay Ridge"},{name:"Bensonhurst"},{name:"Borough Park"},{name:"Dyker Heights"},{name:"Mapleton"},{name:"New Utrecht"},{name:"Sunset Park"},{name:"Chinatown"},{name:"Sunset Industrial Park"},{name:"Southern"},{name:"Barren Island"},{name:"Bergen Beach"},{name:"Georgetown"},{name:"Coney Island"},{name:"Brighton Beach"},{name:"Manhattan Beach"},{name:"Sheepshead Bay "},{name:"Madison"},{name:"Sea Gate"},{name:"Flatlands"},{name:"Gerritsen Beach"},{name:"Gravesend"},{name:"White Sands"},{name:"Homecrest"},{name:"Marine Park"},{name:"Mill Basin"},{name:"Plumb Beach"},{name:"East New York"},{name:"Cypress Hills"},{name:"New Lots"},{name:"Starrett City"},{name:"Highland Park"},{name:"Northern"},{name:"Bushwick"},{name:"Williamsburg"},{name:"Greenpoint"},{name:"Williamsburg"},{name:"Bedford-Stuyvesant"},{name:"Boerum Hill"},{name:"Carroll Gardens"},{name:"Cobble Hill"},{name:"Brooklyn Heights"},{name:"Brownsville"},{name:"City Line"},{name:"Clinton Hill"},{name:"Crown Heights"},{name:"Cypress Hills"},{name:"Downtown Brooklyn"},{name:"DUMBO"},{name:"East New York"},{name:"Fort Greene"},{name:"Gowanus"},{name:"Greenwood Heights"},{name:"Highland Park"},{name:"New Lots"},{name:"Ocean Hill"},{name:"Park Slope"},{name:"Prospect Heights"},{name:"RAMBO"},{name:"Spring Creek"},{name:"Starrett City"},{name:"Stuyvesant Heights"},{name:"Sunset Park"},{name:"Vinegar Hill"},{name:"Weeksville"},{name:"Windsor Terrace"},{name:"Wingate"},{name:"Bergen Beach"},{name:"Canarsie"},{name:"Flatlands"},{name:"Georgetown"},{name:"Marine Park"},{name:"Mill Basin"},{name:"Brighton Beach"},{name:"Coney Island"},{name:"Gerritsen Beach"},{name:"Gravesend"},{name:"Homecrest"},{name:"Madison"},{name:"Manhattan Beach"},{name:"Plum Beach"},{name:"Seagate"},{name:"Sheepshead Bay"},{name:"Bay Ridge"},{name:"Borough Park"},{name:"Dyker Heights"},{name:"Mapleton"},{name:"New Utrecht"},{name:"Bath Beach"},{name:"Bensonhurst"},{name:"Sunset Park"},{name:"Flatbush"},{name:"Ditmas Park"},{name:"East Flatbush"},{name:"Farragut"},{name:"Fiske Terrace"},{name:"Flatbush"},{name:"Kensington"},{name:"Prospect Lefferts Gardens"},{name:"Prospect Park South"},{name:"Bedford Park"},{name:"Belmont"},{name:"Fordham"},{name:"Kingsbridge"},{name:"Kingsbridge Heights"},{name:"Van Cortlandt Village"},{name:"Marble Hill"},{name:"Norwood"},{name:"Riverdale"},{name:"Central Riverdale"},{name:"Fieldston"},{name:"Hudson Hill"},{name:"North Riverdale"},{name:"Spuyten Duyvil "},{name:"University Heights"},{name:"Woodlawn"},{name:"East Tremont"},{name:"Highbridge"},{name:"Hunts Point"},{name:"Longwood"},{name:"Foxhurst"},{name:"Woodstock"},{name:"Melrose"},{name:"Morris Heights"},{name:"Morrisania"},{name:"Crotona Park East"},{name:"Mott Haven"},{name:"Port Morris"},{name:"The Hub"},{name:"Tremont"},{name:"Mount Eden"},{name:"Mount Hope"},{name:"West Farms"},{name:"Allerton"},{name:"Baychester"},{name:"Bronxdale"},{name:"City Island"},{name:"Co-op City"},{name:"Eastchester"},{name:"Edenwald"},{name:"Indian Village"},{name:"Laconia"},{name:"Olinville"},{name:"Morris Park"},{name:"Pelham Gardens"},{name:"Pelham Parkway"},{name:"Van Nest"},{name:"Wakefield"},{name:"Williamsbridge"},{name:"Bronx Rive"},{name:"Bruckner"},{name:"Castle Hill"},{name:"Clason Point"},{name:"Country Club"},{name:"Edgewater Park"},{name:"Harding Park"},{name:"Parkchester"},{name:"Park Versailles"},{name:"Westchester Heights"},{name:"Pelham Bay"},{name:"Pelham Bay Park"},{name:"Orchard Beach"},{name:"Soundview"},{name:"Schuylerville"},{name:"Throggs Neck "},{name:"Unionport"},{name:"Westchester Square"},{name:"The Pelham Island"},{name:"The Blauzes"},{name:"Chimney Sweeps Islands"},{name:"City Island"},{name:"Hart Island"},{name:"High Island"},{name:"Hunter Island"},{name:"Rat Island"},{name:"Twin Island"},{name:"North Brother Island"},{name:"South Brother Island"},{name:"Astoria"},{name:"Astoria Heights"},{name:"Ditmars"},{name:"Hunters Point"},{name:"Little Egypt"},{name:"Long Island City"},{name:"Blissville"},{name:"Dutch Kills"},{name:"Queensbridge "},{name:"Queensview"},{name:"Queensview West "},{name:"Ravenswood "},{name:"Sunnyside"},{name:"Sunnyside Gardens"},{name:"Bayside"},{name:"Bay Terrace"},{name:"Oakland Gardens"},{name:"Bellerose"},{name:"College Point"},{name:"Douglaston"},{name:"Flushing"},{name:"Auburndale"},{name:"Broadway-Flushing"},{name:"Chinatown"},{name:"Downtown Flushing"},{name:"Koreatown"},{name:"Linden Hill"},{name:"Murray Hill"},{name:"Willets Point"},{name:"Pomonok"},{name:"Electchester"},{name:"Queensboro Hill"},{name:"Floral Park"},{name:"Fresh Meadows"},{name:"Hillcrest"},{name:"Utopia"},{name:"Fort Totten"},{name:"Glen Oaks"},{name:"North Shore Towers "},{name:"Kew Gardens Hills"},{name:"Little Neck"},{name:"Whitestone"},{name:"Beechhurst"},{name:"Malba"},{name:"Corona"},{name:"LeFrak City"},{name:"North Corona"},{name:"East Elmhurst"},{name:"Elmhurst"},{name:"Forest Hills"},{name:"Forest Hills Gardens"},{name:"Fresh Pond"},{name:"Glendale"},{name:"Jackson Heights"},{name:"Kew Gardens"},{name:"Briarwood"},{name:"Maspeth"},{name:"Middle Village"},{name:"Rego Park"},{name:"Ridgewood"},{name:"Wyckoff Heights"},{name:"Woodside"},{name:"Bellaire"},{name:"Brookville"},{name:"Cambria Heights"},{name:"Hollis Hills"},{name:"Hollis"},{name:"Holliswood"},{name:"Jamaica"},{name:"Jamaica Center"},{name:"Jamaica Estates"},{name:"Jamaica Hills"},{name:"Laurelton"},{name:"Meadowmere"},{name:"Queens Village"},{name:"Rochdale Village"},{name:"Rosedale"},{name:"Saint Albans"},{name:"South Jamaica"},{name:"Springfield Gardens"},{name:"Warnerville"},{name:"The Hole"},{name:"Howard Beach"},{name:"Hamilton Beach"},{name:"Lindenwood "},{name:"Old Howard Beach"},{name:"Ramblersville"},{name:"Rockwood Park"},{name:"Ozone Park"},{name:"South Ozone Park"},{name:"Tudor Village"},{name:"Richmond Hill"},{name:"Woodhaven"},{name:"Arverne"},{name:"Bayswater"},{name:"Belle Harbor"},{name:"Breezy Point"},{name:"Broad Channel"},{name:"Edgemere"},{name:"Far Rockaway"},{name:"Hammels"},{name:"Neponsit"},{name:"Rockaway Beach"},{name:"Rockaway Park"},{name:"Roxbury"},{name:"Seaside"},{name:"Annadale"},{name:"Arden Heights"},{name:"Arlington"},{name:"Arrochar"},{name:"Bay Terrace"},{name:"Bloomfield"},{name:"Brighton Heights"},{name:"Bulls Head"},{name:"Castleton"},{name:"Castleton Corners"},{name:"Charleston"},{name:"Chelsea"},{name:"Clifton"},{name:"Concord"},{name:"Dongan Hills"},{name:"Egbertville"},{name:"Elm Park"},{name:"Eltingville"},{name:"Emerson Hill"},{name:"Fort Wadsworth"},{name:"Graniteville"},{name:"Grant City"},{name:"Grasmere"},{name:"Great Kills"},{name:"Greenridge"},{name:"Grymes Hill"},{name:"Hamilton Park"},{name:"Heartland Village"},{name:"Huguenot"},{name:"Lighthouse Hill"},{name:"Manor Heights"},{name:"Mariners Harbor"},{name:"Meiers Corners"},{name:"Midland Beach"},{name:"New Brighton"},{name:"New Dorp"},{name:"New Springville"},{name:"Oakwood"},{name:"Ocean Breeze"},{name:"Old Place"},{name:"Old Town"},{name:"Pleasant Plains"},{name:"Port Richmond"},{name:"Prince's Bay"},{name:"Randall Manor"},{name:"Richmond Valley"},{name:"Richmondtown"},{name:"Rosebank"},{name:"Rossville"},{name:"Sandy Ground"},{name:"Shore Acres"},{name:"Silver Lake"},{name:"South Beach"},{name:"St. George"},{name:"Stapleton"},{name:"Stapleton Heights"},{name:"Sunnyside"},{name:"Todt Hill"},{name:"Tottenville"},{name:"Tottenville Beach"},{name:"Travis"},{name:"Ward Hill"},{name:"Westerleigh"},{name:"West New Brighton"},{name:"Willowbrook"},{name:"Woodrow"}
+# ])
 
 
 

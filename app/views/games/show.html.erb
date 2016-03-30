@@ -18,6 +18,9 @@
  <% end %>
 
         
+<div id="resume">
+   <embed src="<%= @game.rules %>" width="950" height="750"></embed>
+ </div>
 
 <div> <h5>Users that own <%= @game.name %></h5>
 <% @game.users.each do |i| %>		
@@ -25,4 +28,3 @@
 <% end %>	
 </div>	 
 	
-<article><%= @game.rules %></article>

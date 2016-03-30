@@ -4,7 +4,8 @@ class NeighborhoodsController < ApplicationController
   # GET /neighborhoods
   # GET /neighborhoods.json
   def index
-    @neighborhoods = Neighborhood.all
+    @neighborhoods = Neighborhood.all.order('name ASC')
+    # videos = Movie.find_by_first_letter('a')
   end
 
   # GET /neighborhoods/1

@@ -12,16 +12,10 @@
 
     def new
       @user = User.new
-      puts "================="
-      puts "New Info Created"
-      puts "================="
     end
 
     def edit
       @user = User.find(params[:id])
-      puts "======================"
-      puts "Information was edited"
-      puts "======================"
     end
 
     def show
@@ -32,10 +26,6 @@
       @user = User.find(params[:id])
       @user.update_attributes(user_params)
       redirect_to User.find(params[:id])
-      puts "====================="
-      puts "User info was updated"
-      puts "====================="
-
     end
 
     def destroy
@@ -52,6 +42,6 @@
     private
 
     def user_params
-      params.require(:user).permit(:first_name, :last_name, :about)
+      params.require(:user).permit(:username, :neighborhood)
     end
 end
