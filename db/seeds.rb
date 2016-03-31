@@ -1,81 +1,81 @@
 
 User.delete_all
-Game.delete_all
-Game.create([
-{
-name: 'Catan', 
-img_url: 'http://images.akamai.steamusercontent.com/ugc/41972545083312882/0A1E7DDCE83C6CC2B2C42ADFA918C02E97E6C645/', 
-rules: 'http://www.catan.com/en/download/?SoC_rv_Rules_091907.pdf'}, 
-{ 
-name: 'Go', 
-img_url: 'http://0.s3.envato.com/files/78833222/Image%20Preview.jpg', 
-rules: "http://www.as8.it/stuff/how_to_play_Go.pdf" 
-},
-{
-name: 'Monopoly',
-img_url: 'http://images.freeimages.com/images/premium/previews/1860/18602707-monopoly-board-game-box.jpg', 
-rules: "http://www.hasbro.com/common/instruct/Monopoly_Vintage.pdf" 
-},
-{
-name: 'Smash Up', 
-img_url: 'http://www.alderac.com/smashup/files/2014/04/SU5_GeekBoxTop.jpg', 
-rules: "https://www.alderac.com/smashup/files/2012/06/AEG-SU-Rulebook.pdf"
-},
-{ 
-name:"Risk", 
-img_url: "http://www.drinkinggames.co.uk/images/games/risk.jpg", 
-rules: "http://www.hasbro.com/common/instruct/risk.pdf"
-},
-{
-name:"Ticket To Ride", 
-img_url: "https://cf.geekdo-images.com/images/pic38674.jpg", 
-rules:"http://cdn1.daysofwonder.com/tickettoride/en/img/tt_rules_2013_en.pdf"
-},
-{	
-name:"Clue", 
-img_url: "http://whodoesthisstuff.com/wp-content/uploads/2015/03/clue-1986-game.jpg", 
-rules: "http://www.hasbro.com/common/instruct/Clue_(2002).pdf"
-},
-{ 
-name: 'Chess', 
-img_url: 'http://www.voofoostudios.com/wp-content/uploads/2014/05/Williams_PS_011.jpg', 
-rules: "http://www-math.bgsu.edu/~zirbel/chess/BasicChessRules.pdf"
-},
-{
-name: "Scrabble",
-img_url: "http://www.thatericalper.com/wp-content/uploads/2013/01/65273224_scrabble_topimage.jpg",
-rules: "http://www.hasbro.com/common/instruct/Scrabble_(2003).pdf"
-},
-{
-name:"Cards Against Humanity" , 
-img_url:"http://www.adweek.com/files/imagecache/node-blog/aah-1.jpg" , 
-rules:"https://s3.amazonaws.com/cah/CAH_Rules.pdf" 
-},
-{
-name:"Munkin",
-img_url:"http://www.gamehead.com/sites/default/files/styles/gh_article_banner_teaser/public/images/article/thumb_files/1679/munchkin-4q3lqdr.png?itok=efx3sA-S",
-rules:"http://www.worldofmunchkin.com/rules/munchkin_rules.pdf"},
- {
-name: "Magic: The Gathering" ,
-img_url:"http://img14.deviantart.net/0eb2/i/2013/247/f/0/magic_the_gathering_mana_wallpaper_by_amphetamine_ashley-d6l0g9d.png",
-rules:"https://www.wizards.com/magic/rules/mtg9edrulebook_en.pdf"
-},
-{
-name:"Bang" ,
-img_url: "http://gamerate.net/img/games/864/box.jpg",
-rules: "http://www.dvgiochi.net/bang/bang_rules.pdf"
-},
-{
-name: "Pandemic Legacy",
-img_url:"http://dailyworkerplacement.com/wp-content/uploads/2015/12/pleg1a-1541x1140.jpg" ,
-rules:"http://www.bgames.com.ua/rules/pandemic_legacy.pdf"
-},
-{
-name:"Carcassonne" ,
-img_url:"http://assets.dacw.co/itemimages/carcassonnebigbox1a.jpg" ,
-rules:"http://www.zmangames.com/uploads/4/7/1/7/47170931/carcassonne_new_edition.pdf"
-},
-]);
+# Game.delete_all
+# Game.create([
+# {
+# name: 'Catan', 
+# img_url: 'http://41.media.tumblr.com/2b0b7b33be769be888152883e07bdbeb/tumblr_nsolhzUJXo1uuigdbo1_400.jpg', 
+# rules: 'http://www.catan.com/en/download/?SoC_rv_Rules_091907.pdf'}, 
+# { 
+# name: 'Go', 
+# img_url: 'https://s-media-cache-ak0.pinimg.com/736x/ca/30/6c/ca306c4cb6d515b3d3c6bd23a93feca9.jpg', 
+# rules: "http://www.as8.it/stuff/how_to_play_Go.pdf" 
+# },
+# {
+# name: 'Monopoly',
+# img_url: 'http://3.bp.blogspot.com/-B0n2tQbyTjs/UQEQGi7huwI/AAAAAAAABE8/kjjozHpb9Ig/s1600/monopoly%2Bbord.jpg', 
+# rules: "http://www.hasbro.com/common/instruct/Monopoly_Vintage.pdf" 
+# },
+# {
+# name: 'Smash Up', 
+# img_url: 'http://www.uplay.it/www.uplay.it_Smash_Up--400x400.png', 
+# rules: "https://www.alderac.com/smashup/files/2012/06/AEG-SU-Rulebook.pdf"
+# },
+# { 
+# name:"Risk", 
+# img_url: "https://s-media-cache-ak0.pinimg.com/736x/e6/f7/5b/e6f75b648ec366b96201cfa6c19fbabc.jpg", 
+# rules: "http://www.hasbro.com/common/instruct/risk.pdf"
+# },
+# {
+# name:"Ticket To Ride", 
+# img_url: "http://www.hitgames.ca/media/product/fe8/ticket-to-ride-card-game-english-french-german-language-days-of-wonder-824968217993-85d.JPG", 
+# rules:"http://cdn1.daysofwonder.com/tickettoride/en/img/tt_rules_2013_en.pdf"
+# },
+# {	
+# name:"Clue", 
+# img_url: "https://upload.wikimedia.org/wikipedia/en/e/ea/Clue-do-1998.jpg", 
+# rules: "http://www.hasbro.com/common/instruct/Clue_(2002).pdf"
+# },
+# { 
+# name: 'Chess', 
+# img_url: 'http://www.tigerlilov.com/sites/default/files/images/Lightning-chess.jpg', 
+# rules: "http://bucultureshock.com/wp-content/uploads/2012/11/chess-rook-wood-risk.jpg"
+# },
+# {
+# name: "Scrabble",
+# img_url: "https://0611fc3ae477f875c541-a91719f20065bb4679f0eabefd71fe6d.ssl.cf2.rackcdn.com/b71bd63f761c6ab5.scrabble2.jpg",
+# rules: "http://www.hasbro.com/common/instruct/Scrabble_(2003).pdf"
+# },
+# {
+# name:"Cards Against Humanity" , 
+# img_url:"https://www.britbound.co.uk/images/uploads/Events/Cards_Against_Humanity.jpg" , 
+# rules:"https://s3.amazonaws.com/cah/CAH_Rules.pdf" 
+# },
+# {
+# name:"Munkin",
+# img_url: "https://comparativegeeks.files.wordpress.com/2015/03/munchkingame.jpg?w=500",
+# rules:"http://www.worldofmunchkin.com/rules/munchkin_rules.pdf"},
+#  {
+# name: "Magic: The Gathering" ,
+# img_url:"http://www.mtgmintcard.com/images/mtg/card-lots/others/eng/1600-MAGIC-THE-GATHERING-MODERN-STARTER-CARD-LOT-M14-RETURN-TO-RAVNICA-BLOCK-01.jpg",
+# rules:"https://www.wizards.com/magic/rules/mtg9edrulebook_en.pdf"
+# },
+# {
+# name:"Bang" ,
+# img_url: "http://cdn.shopify.com/s/files/1/0169/5268/products/bangbullet-2_large.jpeg?v=1343951907",
+# rules: "http://www.dvgiochi.net/bang/bang_rules.pdf"
+# },
+# {
+# name: "Pandemic Legacy",
+# img_url:"https://cf.geekdo-images.com/images/pic2382427.jpg" ,
+# rules:"http://www.bgames.com.ua/rules/pandemic_legacy.pdf"
+# },
+# {
+# name:"Carcassonne" ,
+# img_url:"http://www.gamepeople.co.uk/screens/board_carcasonnetradersandbuilders_shot3.jpg" ,
+# rules:"http://www.zmangames.com/uploads/4/7/1/7/47170931/carcassonne_new_edition.pdf"
+# },
+# ]);
 # {name: ,img_url: ,rules:},
 
 # Neighborhood.create([   

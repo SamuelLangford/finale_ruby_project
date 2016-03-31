@@ -4,7 +4,6 @@
     def index
       @users = User.all
     end
-
     # def create
     #   @user = User.create(user_params)
     #   redirect_to users_path
@@ -13,7 +12,6 @@
     # def new
     #   @user = User.new
     # end
-
     def edit
       @user = User.find(params[:id])
     end
@@ -42,6 +40,6 @@
     private
     
     def user_params
-      params.require(:user).permit(:username, :neighborhood)
+      params.require(:user).permit(:username, :neighborhood_id)
     end
 end

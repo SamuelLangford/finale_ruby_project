@@ -13,8 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require private_pub
+//= require bootstrap-sprockets
 //= require_tree .
-
-var x = function (arr) {
-	console.log(arr.split(''))
-}

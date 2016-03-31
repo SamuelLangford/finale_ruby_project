@@ -1,5 +1,7 @@
- <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+
 <% @user.games.each do |i| %>		
-	<a href="/games/<%= i.id %>/"><%= i.name %> </a>
+
+<%= link_to image_tag(i.img_url), i, :class => 'col-md-4' %>
 <% end %>	
 
+<a href="/neighborhoods/<%= @user.neighborhood_id %>"> Neighborhood</a>

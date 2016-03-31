@@ -7,13 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 	<p>
 		<%= link_to ' Browse Games', root_path %>|
     <a href="/neighborhoods">Search by Neighborhood</a>|
 <% if user_signed_in? %>
-  User email: <%= current_user.email %>
-  Logged in as <strong><%= current_user.username %></strong>|
+  Welcome <strong><%= current_user.username %></strong>|
   <a href="/users/<%= current_user.id %>/">My Profile</a>
   <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
 <% else %>

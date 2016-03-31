@@ -1,19 +1,14 @@
-<h1>This is game show page</h1>
 <p id="notice"><%= notice %></p>
-<div class='board-container'><img src="<%= @game.img_url%>"></div>
-<p>
-  <strong>Name:</strong>
-  <%= @game.name %>
-</p>
-
-<%= link_to 'Edit', edit_game_path(@game) %> |
 <%= link_to 'Back', games_path %>
+<h1><%= @game.name %></h1>
+<div class='col-md-8'><img src="<%= @game.img_url%>"></div>
+
 
 
 <% if current_user %>
 <form action="/games/<%= @game.id %>/add_game" method="post">
     <input type="hidden" name="_method" value="put">
-    <button value='<%= current_user %>'>Add to collection</button>
+    <button value='<%= current_user %>' class = "btn btn-primary">Add to collection</button>
 </form>
  <% end %>
 

@@ -13,6 +13,7 @@
      <%= f.text_field :username, autofocus: true %>
   </div>
 
+<%= f.collection_select :neighborhood_id, Neighborhood.order(:name) ,:id, :name %>  
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
@@ -22,7 +23,7 @@
   </div>
   <div class="field">
     <%= f.label :password_confirmation %><br /> 
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <%= f.password_field :password_confirmation, autocomplete: "off" %> 
   </div>
 
   <div class="actions">
@@ -30,8 +31,9 @@
   </div>
 <% end %>
 
-<%= render "users/shared/links" %>
+<%= render "users/shared/links" %>  
 
+  
 
 
 
