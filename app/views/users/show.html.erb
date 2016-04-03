@@ -2,6 +2,12 @@
 <% @user.games.each do |i| %>		
 
 <%= link_to image_tag(i.img_url), i, :class => 'col-md-4' %>
+
 <% end %>	
 
-<a href="/neighborhoods/<%= @user.neighborhood_id %>"> Neighborhood</a>
+
+
+
+<h1><a href="/neighborhoods/<%= @user.neighborhood_id %>">  <%= @user.neighborhood.name %> click here</a>
+	
+<p><%= @user.about %></p>

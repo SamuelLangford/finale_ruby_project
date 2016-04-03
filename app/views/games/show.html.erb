@@ -1,7 +1,8 @@
+<div id-'game-show-container'>
 <p id="notice"><%= notice %></p>
 <%= link_to 'Back', games_path %>
 <h1><%= @game.name %></h1>
-<div class='col-md-8'><img src="<%= @game.img_url%>"></div>
+<div id='show-game-container' class='col-md-6'><img src="<%= @game.img_url%>"></div><br>
 
 
 
@@ -13,13 +14,29 @@
  <% end %>
 
         
-<div id="resume">
-   <embed src="<%= @game.rules %>" width="950" height="750"></embed>
- </div>
 
-<div> <h5>Users that own <%= @game.name %></h5>
+
+<divc lass='col-md-4' > <h5>Users that own <%= @game.name %></h5>
 <% @game.users.each do |i| %>		
-	<a href="/users/<%= i.id %>/"><%= i.email %>'s' Profile</a>
+	<a href="/users/<%= i.id %>/"><%= i.username %></a>
 <% end %>	
 </div>	 
 	
+
+
+	
+
+
+
+<%= render 'disqus'  %>
+
+
+
+
+
+
+<div  class='col-md-12'>
+   <embed src="<%= @game.rules %>" width="950" height="750"></embed>
+ </div>	
+
+ </div>

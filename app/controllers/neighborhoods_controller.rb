@@ -5,7 +5,12 @@ class NeighborhoodsController < ApplicationController
   # GET /neighborhoods.json
   def index
     @neighborhoods = Neighborhood.all.order('name ASC')
-    # videos = Movie.find_by_first_letter('a')
+      if params[:search]
+        @neighborhoods = Neighborhood.search(params[:search])
+        else
+        @neighborhoods = Neighborhood.all.order('name ASC')
+      end
+
   end
  
  

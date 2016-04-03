@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 	has_and_belongs_to_many :games
-	belongs_to :neighborhoods
+	belongs_to :neighborhood, :foreign_key => :neighborhood_id
 	# has_many :conversations, :foreign_key => :sender_id
 	validates :username, presence: false
 	validates :about, presence: false

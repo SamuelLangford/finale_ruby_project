@@ -40,6 +40,6 @@
     private
     
     def user_params
-      params.require(:user).permit(:username, :neighborhood_id)
+      params.require(:user).permit(:username, :about, :neighborhood_id)
     end
 end
