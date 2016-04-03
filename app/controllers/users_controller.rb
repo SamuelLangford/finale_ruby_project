@@ -17,7 +17,9 @@
     end
 
     def show
-      @user = User.find(params[:id])
+      @users = User.all
+      @user = User.find(params[:id])   
+      current_user === @user ? @this_user = true : @this_user = false     
     end
 
     def update

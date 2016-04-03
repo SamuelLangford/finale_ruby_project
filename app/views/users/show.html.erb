@@ -1,13 +1,32 @@
+<div class ='col-md-4'>
+<h1><%= @user.username %> </h1>
+Neighborhood:<a href="/neighborhoods/<%= @user.neighborhood_id %>">  <%= @user.neighborhood.name %> </a><br>
+About:<p><%= @user.about %></p>
+<% if @this_user %>
+ <% @users.each do |user| %>  
+<div>
+ <% if Conversation.between(current_user.id , user.id).present? %>
+	 <%= user.username %>
+   <%= link_to 'View messages', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post'%>
+ <% end %>	
+</div>
+  <% end %>
+ <% end %>
+</div>
+<% @user.games.each do |game| %>	
+<div  class = 'col-md-4'>
+<%= link_to image_tag(game.img_url), game %><br>	
+</div>	
+<% end %>
 
-<% @user.games.each do |i| %>		
+<% if !@this_user  %>
+      <h1>Hello</h1>
+    <div class="button">
+        <%= @user.username %> <%= link_to 'Message me!', conversations_path(sender_id: current_user.id, recipient_id: @user.id), method: 'post'%>
+    </div>
+ <% end %>
 
-<%= link_to image_tag(i.img_url), i, :class => 'col-md-4' %>
+ 
+<%= render 'disqus'  %>
 
-<% end %>	
-
-
-
-
-<h1><a href="/neighborhoods/<%= @user.neighborhood_id %>">  <%= @user.neighborhood.name %> click here</a>
 	
-<p><%= @user.about %></p>

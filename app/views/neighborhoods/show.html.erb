@@ -1,13 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
  <h1><%= @neighborhood.name %></h1> 
 </p>
 
-<%= link_to 'Edit', edit_neighborhood_path(@neighborhood) %> |
-<%= link_to 'Back', neighborhoods_path %>
 
+
+<h3>Users in this neighborhood</h3>
 <% @neighborhood.users.each do |i| %>		
 
 <a href="/users/<%= i.id %>"><h1><%= i.username %></h1></a>
