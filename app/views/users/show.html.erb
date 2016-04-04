@@ -2,12 +2,13 @@
 <h1><%= @user.username %> </h1>
 Neighborhood:<a href="/neighborhoods/<%= @user.neighborhood_id %>">  <%= @user.neighborhood.name %> </a><br>
 About:<p><%= @user.about %></p>
-<% if @this_user %>
+<% if @this_user %> 
+Messges:
  <% @users.each do |user| %>  
 <div>
  <% if Conversation.between(current_user.id , user.id).present? %>
 	 <%= user.username %>
-   <%= link_to 'View messages', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post'%>
+   <%= link_to 'View', conversations_path(sender_id: current_user.id, recipient_id: user.id,), method: 'post'%>
  <% end %>	
 </div>
   <% end %>
@@ -18,9 +19,8 @@ About:<p><%= @user.about %></p>
 <%= link_to image_tag(game.img_url), game %><br>	
 </div>	
 <% end %>
-
-<% if !@this_user  %>
-      <h1>Hello</h1>
+<% if !@this_user && current_user  %>
+      <h1></h1>
     <div class="button">
         <%= @user.username %> <%= link_to 'Message me!', conversations_path(sender_id: current_user.id, recipient_id: @user.id), method: 'post'%>
     </div>

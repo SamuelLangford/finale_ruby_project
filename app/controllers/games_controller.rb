@@ -5,18 +5,12 @@ class GamesController < ApplicationController
   # GET /games
   # GET /games.json
   def index
-    # if params[:search]
-    # @games = Game.find_by_name(params[:search]) || nil
-    # # Game.find(:all, :conditions => ['name LIKE ?', "%#{params[:search]}%"])
-    # else
-    # @games = Game.all    
-    # end
+   @games = Game.all
+    if params[:search]
+      @games = Game.search(params[:search])
+     else
       @games = Game.all
-      if params[:search]
-        @games = Game.search(params[:search])
-        else
-        @games = Game.all
-      end
+     end
   end
   # GET /games/1
   # GET /games/1.json
@@ -77,8 +71,8 @@ class GamesController < ApplicationController
   def add_game
     game = Game.find(params[:id])
     user = User.find(current_user.id)
-    user.games << game
-    redirect_to root_path 
+    user.games << game 
+    redirect_to root_path
   end
 
 

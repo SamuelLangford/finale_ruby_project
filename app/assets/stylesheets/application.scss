@@ -26,18 +26,36 @@ body{
 }
 img {
 	width:80%;
+	border-radius: 100;
 }
+
 .col-md-4{
 	text-align: center;
 	color: white;
 	font-size: large;
+	border-radius: 10px !important;	 
 }
+	
 h1{
 		color: white;
 }
 a {
-	color: white;
+	color: white;	
 }
 #show-game-container {
 	margin: 5%;
+}
+
+#m-container .form-control {
+	width: 50%;
+	margin-left: 25%;
+	margin-bottom: 1%;
+	margin-top: 2%;
+	opacity: .5;	
+}
+.form, .btn-primary {
+	opacity: .5;	
+}
+p {
+	color:white;	
 }

@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Neighborhoods</h1>
+<h1>New York City Neighborhoods</h1>
 
 <%= form_tag neighborhoods_path, :method => 'get' do %>
-	 <%= text_field_tag :search, params[:search] %>
+	 <%= text_field_tag :search, params[:search], :class => "form" %>
   <%= submit_tag "Search", :name => nil, :class => "btn btn-primary" %>
 <% end %>
 
@@ -13,3 +13,4 @@
 <div class='col-md-2'> <%= link_to i.name , i %></div>
 
 <% end %>
+		

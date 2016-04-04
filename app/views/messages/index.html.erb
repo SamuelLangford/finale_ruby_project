@@ -1,3 +1,4 @@
+<div>
 <% if @over_ten %>
  <%= link_to 'Show Previous', '?m=all' %>
 <% end %>
@@ -12,12 +13,13 @@
 <% end %>
 </div>
 <%= form_for [@conversation, @message] do |f| %>
- <div>
+ <div  id = 'm-container'>
    <%= f.text_area :body, class: "form-control" %>
  </div>
  <%= f.text_field :user_id, value: current_user.id, type: "hidden" %>
  <div>
-   <%= f.submit "Send", class: " btn-primary" %>
+   <%= f.submit "  Send  ", class: " btn-primary" %>
  </div>
-<% end %> 
-  
+<% end %> 	
+
+ </div>
